@@ -1,0 +1,113 @@
+$width: 200px;
+
+.input-primary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+    align-self: center;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-top: 10rem;
+    padding: 2rem 10rem 2rem 10rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--background-color);
+    border-radius: 1rem;
+
+    &>* {
+        &:not(:last-child :first-child){
+            margin-top: 2rem;
+        }
+    }
+
+    &-txt {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &-link {
+        color: var(--color-primary-dark);
+
+        &:hover {
+            animation: storm 0.7s ease-in-out both;
+        }
+    }
+
+
+    &-div {
+        width: 100%;
+        height: $width/5;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &-label {
+        position: absolute;
+        top: $width/15;
+        color: rgba(var(--color-light-1), .5);
+        font: 400 $width/15 sans-serif;
+        cursor: text;
+        transition: .5s ease;
+
+        &:hover {
+            animation: rotate 0.7s ease-in-out both;
+        }
+    }
+
+    &-input {
+        display: block;
+        width: 100%;
+        padding-top: $width/15;
+        border: none;
+        border-radius: 0;
+        color: var(--color-light-1);
+        background: none;
+        font-size: $width/15;
+        transition: .3s ease;
+
+        &:valid {
+            ~label {
+                top: 0;
+                font: 700 $width/25 sans-serif;
+                color: rgba(var(--color-light-1), .5);
+            }
+        }
+
+        &:focus {
+            outline: none;
+
+
+            ~label {
+                top: 0;
+                font: 700 $width/25 sans-serif;
+                color: --color-light-1;
+            }
+
+            ~.bar:before {
+                transform: translateX(0);
+            }
+        }
+
+        &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0px 1000px --color-light-1 inset;
+            -webkit-text-fill-color: var(--color-light-1) !important;
+        }
+    }
+
+    &-bar {
+        content: '';
+        width: $width;
+        height: $width/150;
+        transition: .3s ease;
+        position: relative;
+        background-color: var(--color-light-1);
+    }
+
+}

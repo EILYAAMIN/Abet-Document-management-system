@@ -1,0 +1,25 @@
+.alert {
+    position: fixed;
+    width: fit-content;
+    padding: 1rem 3rem;
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    z-index: 1000000000;
+
+    &:hover {
+        animation: storm 0.7s ease-in-out both;
+    }
+
+    &-danger {
+        background-color: red;
+    }
+
+    &-seccess {
+        background-color: green;
+    }
+}

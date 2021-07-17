@@ -1,0 +1,44 @@
+.btn-generate {
+    text-decoration: none;
+	border-radius: .2rem;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	height: 3.5rem;
+	width: 20rem;
+	border: .1rem solid var(--color-secondary);
+	font-style: oblique;
+	background-color: var(--color-secondary);
+    color: var(--color-light-1);
+	
+	&-flex{
+		display: flex;
+	}
+
+    &-red{
+        background-color: red;
+    }
+
+	span {
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		color: var(--color-light-1);
+		font-size: 12px;
+		font-weight: 500;
+		letter-spacing: 0.7px;
+	}
+
+	&:hover {
+		animation: storm 0.7s ease-in-out both;
+
+		span {
+			animation-delay: 0.06s;
+			font-size: 13px;
+		}
+	}
+
+	&:active {
+		background-color: var(--navbar-color);
+		transform: translateY(-8px);
+	}
+}

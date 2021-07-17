@@ -1,0 +1,130 @@
+.hide {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.rubric {
+    position: fixed;
+    top: 30vh;
+    right: 15vh;
+    width: 80%;
+    margin: auto;
+    animation: popup 0.7s ease-in-out both;
+    border-radius: 5rem;
+}
+
+.blur-filter {
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.btn-help{
+    padding: .5rem;
+    text-decoration: none;
+	border-radius: .8rem;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	height: 2rem;
+	width: 3rem;
+	border: unset;
+	font-style: oblique;
+
+    &:active {
+		transform: translateY(1px);
+	}
+    &:hover {
+        background-color: #ddd;
+    }
+}
+
+.originality-input {
+    outline: none;
+    width: 12rem;
+    background-color: #e3f1d5;
+    display: flex;
+    margin: auto;
+    height: 4rem;
+    width: 20rem;
+    border: unset;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin: 1rem;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.tr {
+    text-align: center;
+}
+
+.td{
+    text-align: center;
+
+    &-label{
+        text-align: left;
+        margin-left: 1rem;
+    }
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.evaluation {
+    &-container {
+        width: 70%;
+        margin: 1vh auto auto auto;
+        color: black;
+        overflow: hidden;
+    }
+
+    &-table {
+        border-spacing: 1;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 6px;
+        overflow: hidden;
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &-section {
+        margin-top: 2rem;
+    }
+
+    &-input {
+        border-radius: 1rem;
+        width: 6rem;
+        border: inset;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        text-align: center;
+
+        &:focus-visible {
+            border-color: unset;
+            outline: none;
+        }
+    }
+}
+
+.center{
+    display: flex !important;
+    justify-content: center !important;
+    margin: 2rem;
+}

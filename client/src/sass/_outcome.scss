@@ -1,0 +1,24 @@
+.outcome {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 8rem auto;
+    width: 50vh;
+    padding: 4rem;
+    background-color: var(--background-color);
+    border-radius: 20px;
+
+    &>* {
+        margin-top: 3rem;
+    }
+
+    &-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &-text{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}

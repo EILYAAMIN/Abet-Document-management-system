@@ -1,0 +1,13 @@
+.dashboard {
+
+    display: flex;
+    justify-content: center;
+
+    &-text {
+        text-transform: uppercase;
+        text-decoration: dashed;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 70vh;
+    }
+}

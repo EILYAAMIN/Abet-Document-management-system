@@ -1,0 +1,64 @@
+.mainpage {
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &-view {
+        position: relative;
+
+        &-img {
+            position: relative;
+            clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+            z-index: 0;
+            overflow: hidden;
+            margin-top: 5rem;
+            width: 100%;
+            background: no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            filter: drop-shadow(8px 8px 10px gray) blur(.2rem);
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+            align-items: center;
+            position: absolute;
+            margin-top: 35rem;
+            left: 27%;
+            z-index: 1;
+            font-size: 3rem;
+            font-weight: bold;
+            overflow: hidden;
+
+            &:hover {
+                animation: storm 0.7s ease-in-out both;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: white;
+                animation: a-ltr-after 1s cubic-bezier(0, 1, 1, 0) forwards;
+                transform: translateX(-200%);
+                
+            }
+        }
+    }
+
+
+    &-box {
+        position: relative;
+        margin-top: 10rem;
+    }
+
+
+}
